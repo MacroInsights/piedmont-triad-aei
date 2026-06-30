@@ -206,7 +206,7 @@
     <div class="rpt-header">
       <h1>Piedmont Triad Economic Activity Index</h1>
       <div class="header-row">
-        <span class="release">Monthly Report &mdash; {{RELEASE_MONTH}}</span>
+        <span class="release">Monthly Report &mdash; June 2026</span>
         <span class="inst">NC A&amp;T State University</span>
       </div>
     </div>
@@ -214,13 +214,13 @@
     <div class="rpt-body">
 
       <p class="lead">
-        <strong>{{DATA_MONTH_LONG}}</strong> &mdash; As of <strong>{{DATA_MONTH_LONG}}</strong>, the Piedmont Triad
-        Economic Activity Index stands at <strong>{{LVL}}</strong> (2019&nbsp;=&nbsp;100), {{LVL_DIR}} its
-        pre-pandemic baseline by {{LVL_DIFF}} points and <strong>{{ABOVE_PEAK}} points above the pre-recession peak of
-        {{PRE_REC_PEAK}} recorded in 2007</strong> &mdash; the highest level in the index&rsquo;s 19-year history.
-        Growth momentum stands at <strong>{{MOM}} out of 100</strong>,
-        {{MOM_INTERP}}. Labor utilization &mdash; average weekly hours relative to
-        2019 norms &mdash; registers <strong>{{LU}}</strong>, {{LU_DIR}} the baseline.
+        <strong>May 2026</strong> &mdash; As of <strong>May 2026</strong>, the Piedmont Triad
+        Economic Activity Index stands at <strong>107.8</strong> (2019&nbsp;=&nbsp;100), above its
+        pre-pandemic baseline by 7.8 points and <strong>5.2 points above the pre-recession peak of
+        102.6 recorded in 2007</strong> &mdash; the highest level in the index&rsquo;s 19-year history.
+        Growth momentum stands at <strong>74 out of 100</strong>,
+        above the 50-point neutral threshold, indicating that recent growth is running faster than the region&rsquo;s historical norm. Labor utilization &mdash; average weekly hours relative to
+        2019 norms &mdash; registers <strong>98.5</strong>, below the baseline.
       </p>
 
       <!-- Momentum chart (primary) -->
@@ -235,7 +235,7 @@
       <div class="small-row">
         <div>
           <div class="small-title">Piedmont Triad Economic Activity Index</div>
-          <div class="small-sub">Index level (2019 = 100) &mdash; dotted line marks 2007 peak ({{PRE_REC_PEAK}})</div>
+          <div class="small-sub">Index level (2019 = 100) &mdash; dotted line marks 2007 peak (102.6)</div>
           <div class="small-wrap" style="height:195px"><canvas id="levelChart"></canvas></div>
           <div class="source" style="margin-top:5px">Source: U.S. Bureau of Labor Statistics.</div>
         </div>
@@ -301,11 +301,11 @@
       </div>
 
       <div class="rsec">
-        <h3>Index Level: {{LVL}}</h3>
-        <p>At {{LVL}} (2019&nbsp;=&nbsp;100), the Triad&rsquo;s economy has not only fully recovered
+        <h3>Index Level: 107.8</h3>
+        <p>At 107.8 (2019&nbsp;=&nbsp;100), the Triad&rsquo;s economy has not only fully recovered
         from the COVID-19 shock but has expanded meaningfully beyond its pre-pandemic level &mdash;
-        {{LVL_DIFF}} points {{LVL_DIR}} the 2019 baseline. Notably, the current reading also surpasses the
-        pre-recession peak of {{PRE_REC_PEAK}} recorded in mid-2007, placing the Triad&rsquo;s economy at its
+        7.8 points above the 2019 baseline. Notably, the current reading also surpasses the
+        pre-recession peak of 102.6 recorded in mid-2007, placing the Triad&rsquo;s economy at its
         highest level in the index&rsquo;s 19-year history. For historical perspective: after the
         2008&ndash;09 recession, the region spent roughly six years working its way back to its
         pre-crisis level before eventually surpassing it. The current post-pandemic expansion has
@@ -321,7 +321,7 @@
       </div>
 
       <div class="rsec">
-        <h3>Growth Momentum: {{MOM}} out of 100</h3>
+        <h3>Growth Momentum: 74 out of 100</h3>
         <p>If the index level is the scoreboard, growth momentum is the speedometer. It measures not
         where the Triad economy currently stands, but how fast it is moving &mdash; and whether that
         pace is building or fading relative to the region&rsquo;s own history. The score is
@@ -329,7 +329,7 @@
         scale designed to be read at a glance: 50 is the neutral midpoint, above 50 signals
         above-average growth, and below 50 signals that growth has slowed or stalled relative to
         historical norms.</p>
-        <p>At {{MOM}}, momentum is {{MOM_INTERP}}. For business leaders and regional
+        <p>At 74, momentum is above the 50-point neutral threshold, indicating that recent growth is running faster than the region&rsquo;s historical norm. For business leaders and regional
         policymakers, the combination of an index level above 100 and momentum well above 50 is a
         favorable alignment: the Triad is not merely holding the gains of the post-COVID recovery but
         continuing to build on them. Periods of sustained readings at this level have historically
@@ -340,7 +340,7 @@
       </div>
 
       <div class="rsec">
-        <h3>Labor Utilization: {{LU}}</h3>
+        <h3>Labor Utilization: 98.5</h3>
         <p>Labor utilization measures average weekly hours worked per employee, indexed so that the
         2019 average equals 100. It captures a dimension of regional labor conditions that payroll
         counts alone cannot: the <em>intensity</em> with which the existing workforce is being
@@ -349,7 +349,7 @@
         committing to permanent new hires when conditions improve. This behavioral pattern means
         labor utilization is typically one of the first places where changes in the economic climate
         show up, making it a practical leading indicator within the composite.</p>
-{{LU_PARA2}}
+        <p>At 98.5, workers are logging fewer hours than before the pandemic, pointing to slack in labor demand that the headline index may not fully capture. The 1.5-point gap from the 100 baseline is modest and within the normal range of historical variation, but its persistence alongside a headline index above 100 is worth noting. One reading is that Triad employers still have room to intensify the use of their current workforce before needing to add significant new positions &mdash; a pattern that, if demand continues to grow, could precede a new wave of hiring.</p>
       </div>
 
     </div>
@@ -376,17 +376,17 @@
 //  DATA
 // ═══════════════════════════════════════════
 
-const levelLabels = {{LEVEL_LABELS}};
+const levelLabels = ["2007-02","2007-03","2007-04","2007-05","2007-06","2007-07","2007-08","2007-09","2007-10","2007-11","2007-12","2008-01","2008-02","2008-03","2008-04","2008-05","2008-06","2008-07","2008-08","2008-09","2008-10","2008-11","2008-12","2009-01","2009-02","2009-03","2009-04","2009-05","2009-06","2009-07","2009-08","2009-09","2009-10","2009-11","2009-12","2010-01","2010-02","2010-03","2010-04","2010-05","2010-06","2010-07","2010-08","2010-09","2010-10","2010-11","2010-12","2011-01","2011-02","2011-03","2011-04","2011-05","2011-06","2011-07","2011-08","2011-09","2011-10","2011-11","2011-12","2012-01","2012-02","2012-03","2012-04","2012-05","2012-06","2012-07","2012-08","2012-09","2012-10","2012-11","2012-12","2013-01","2013-02","2013-03","2013-04","2013-05","2013-06","2013-07","2013-08","2013-09","2013-10","2013-11","2013-12","2014-01","2014-02","2014-03","2014-04","2014-05","2014-06","2014-07","2014-08","2014-09","2014-10","2014-11","2014-12","2015-01","2015-02","2015-03","2015-04","2015-05","2015-06","2015-07","2015-08","2015-09","2015-10","2015-11","2015-12","2016-01","2016-02","2016-03","2016-04","2016-05","2016-06","2016-07","2016-08","2016-09","2016-10","2016-11","2016-12","2017-01","2017-02","2017-03","2017-04","2017-05","2017-06","2017-07","2017-08","2017-09","2017-10","2017-11","2017-12","2018-01","2018-02","2018-03","2018-04","2018-05","2018-06","2018-07","2018-08","2018-09","2018-10","2018-11","2018-12","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01","2023-02","2023-03","2023-04","2023-05","2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05"];
 
-const levelVals = {{LEVEL_VALS}};
+const levelVals = [101.83,102.06,102.13,102.56,102.55,102.51,102.35,102.45,102.48,102.4,102.42,102.51,102.32,102.33,102.4,102.08,102.21,101.85,101.96,102.01,102.13,101.78,101.15,100.54,100.13,99.42,98.95,98.61,98.43,98.27,98.1,97.91,97.5,97.34,97.06,97.02,96.64,96.6,96.58,96.56,96.49,96.43,96.13,95.88,96.01,95.79,95.62,95.18,95.13,94.95,94.97,94.98,94.8,94.95,94.66,94.63,94.57,94.47,94.52,94.61,94.6,94.5,94.43,94.13,93.97,93.71,93.75,93.81,93.74,93.7,93.7,93.56,93.66,93.56,93.5,93.37,93.53,93.43,93.59,93.72,93.63,93.61,93.75,93.6,93.15,93.77,93.92,93.91,93.97,94,94.06,94.17,94.27,94.43,94.59,94.56,94.67,94.65,94.65,94.82,94.91,95,95.28,95.16,95.33,95.48,95.55,95.44,95.67,95.88,95.92,96.09,96.06,96.27,96.35,96.52,96.6,96.75,96.74,96.69,96.94,96.91,97.04,97.02,97.1,97.21,97.22,97.37,97.55,97.46,97.52,97.65,97.89,97.95,98.18,98.22,98.43,98.52,98.51,98.58,98.78,98.83,98.58,99.52,99.44,99.56,99.74,99.81,99.95,100.03,100.19,100.34,100.29,100.56,100.58,100.61,100.85,100.62,95.27,95.85,96.91,97.15,97.82,97.99,98.44,98.59,98.97,98.88,98.94,99.1,99.28,99.58,99.57,100.05,100.05,100.03,100.41,100.59,100.9,100.73,101.24,101.45,101.54,101.74,101.91,102.28,102.41,102.58,102.66,102.69,102.92,103.27,103.31,103.33,103.36,103.47,103.52,103.76,103.96,104.02,104.14,104.17,104.48,104.6,104.8,105.16,105.19,105.37,105.52,105.36,105.48,105.66,105.6,105.76,105.81,105.6,105.86,105.93,106.12,106.23,106.33,106.51,106.7,106.76,106.88,107.13,107.15,107.24,107.33,107.45,107.8,107.84];
 
-const momLabels = {{MOM_LABELS}};
+const momLabels = ["2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01","2023-02","2023-03","2023-04","2023-05","2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05"];
 
-const momVals = {{MOM_VALS}};
+const momVals = [72.9,68.8,58.5,70.9,80,73.7,84.1,74.2,73.6,69,76.3,86.4,67.2,80.1,76.6,84.9,74.9,73,82.7,80.4,80.6,69.6,65.1,68,78.4,78.7,70.7,55.9,59.6,60.8,70.2,73.6,74.1,69.6,62.1,72.8,72.3,78.7,80.3,77.3,76.7,68.1,59.9,56.6,58.2,62.7,64.8,58.6,51.6,56.3,57.3,74.7,68.5,69.8,69.2,72.8,71.2,68.8,70.8,69.1,67.7,61,65.6,76,74.1];
 
-const luLabels = {{LU_LABELS}};
+const luLabels = ["2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01","2023-02","2023-03","2023-04","2023-05","2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04"];
 
-const luVals = {{LU_VALS}};
+const luVals = [100,99.7,99.2,100.5,101.3,99.9,101.1,101.5,101.3,102.3,101.7,101.8,101.3,102.3,101.5,100.8,101.4,100.9,101.4,101,101,101.4,100.4,101,103.1,101.3,100.9,100.8,100.4,99.5,100.5,99.7,99.8,99.5,98.6,99.2,99,99.2,101.2,100.2,100.8,101.5,99.7,99,100,98.7,98.3,98.4,96.2,97.6,97.8,96.9,96.6,97.1,97.3,98.2,98.2,98,99.7,98.2,97.9,98.2,98,98.5];
 
 // ═══════════════════════════════════════════
 //  CONSTANTS
@@ -489,7 +489,7 @@ function endLabelPlugin(line1, line2) {
 //  LEVEL CHART
 // ═══════════════════════════════════════════
 
-const PRE_REC_PEAK = {{PRE_REC_PEAK}};
+const PRE_REC_PEAK = 102.6;
 
 // Labels the pre-recession peak reference line on the level chart
 const peakLabelPlugin = {
@@ -583,7 +583,7 @@ new Chart(document.getElementById('levelChart'), {
       }
     }
   },
-  plugins: [recessionPlugin, endLabelPlugin('{{DATA_MONTH_SHORT}}', '{{LVL}}'), peakLabelPlugin]
+  plugins: [recessionPlugin, endLabelPlugin('May 2026', '107.8'), peakLabelPlugin]
 });
 
 // ═══════════════════════════════════════════
@@ -649,7 +649,7 @@ new Chart(document.getElementById('momChart'), {
       }
     }
   },
-  plugins: [endLabelPlugin('{{DATA_MONTH_SHORT}}', '{{MOM}}')]
+  plugins: [endLabelPlugin('May 2026', '74')]
 });
 
 // ═══════════════════════════════════════════
@@ -720,7 +720,7 @@ new Chart(document.getElementById('luChart'), {
       }
     }
   },
-  plugins: [endLabelPlugin('{{DATA_MONTH_SHORT}}', '{{LU}}')]
+  plugins: [endLabelPlugin('May 2026', '98.5')]
 });
 </script>
 </body>
