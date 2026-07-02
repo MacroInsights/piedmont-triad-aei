@@ -1,53 +1,53 @@
 {
-  "data_month": "April 2026",
+  "data_month": "May 2026",
   "index_value": 108.1,
-  "momentum": 76,
-  "labor_utilization": 98.5,
-  "regime": "Flat",
-  "avg_growth_3m_pct": 0.18,
-  "above_peak": 5.1,
-  "pre_rec_peak": 103,
-  "blurb": "As of April 2026, the Piedmont Triad Economic Activity Index stands at 108.1 — 8.1 points above the 2019 baseline and 5.1 points above the pre-recession peak of 103 recorded in 2007, the highest level in the index’s history. The region is in an Flat phase. Growth Momentum is 76 out of 100, above the 50-point neutral threshold, indicating growth is running faster than the historical norm. Labor Utilization stands at 98.5, 1.5 points below the 2019 baseline.",
+  "momentum": 81,
+  "labor_utilization": 98.3,
+  "regime": "Expansion",
+  "avg_growth_3m_pct": 0.22,
+  "above_peak": 5.4,
+  "pre_rec_peak": 102.7,
+  "blurb": "As of May 2026, the Piedmont Triad Economic Activity Index stands at 108.1 — 8.1 points above the 2019 baseline and 5.4 points above the pre-recession peak of 102.7 recorded in 2007, the highest level in the index’s history. The region is in an Expansion phase. Growth Momentum is 81 out of 100, above the 50-point neutral threshold, indicating growth is running faster than the historical norm. Labor Utilization stands at 98.3, 1.7 points below the 2019 baseline.",
   "sparkline": [
     {
       "quarter": "2024-Q2",
       "date": "2024-06",
-      "value": 105.76
+      "value": 105.56
     },
     {
       "quarter": "2024-Q3",
       "date": "2024-09",
-      "value": 105.89
+      "value": 105.69
     },
     {
       "quarter": "2024-Q4",
       "date": "2024-12",
-      "value": 106.03
+      "value": 105.83
     },
     {
       "quarter": "2025-Q1",
       "date": "2025-03",
-      "value": 106.13
+      "value": 105.96
     },
     {
       "quarter": "2025-Q2",
       "date": "2025-06",
-      "value": 106.54
+      "value": 106.36
     },
     {
       "quarter": "2025-Q3",
       "date": "2025-09",
-      "value": 107
+      "value": 106.8
     },
     {
       "quarter": "2025-Q4",
       "date": "2025-12",
-      "value": 107.41
+      "value": 107.19
     },
     {
       "quarter": "2026-Q1",
       "date": "2026-03",
-      "value": 107.71
+      "value": 107.47
     }
   ]
 }

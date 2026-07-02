@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Piedmont Triad Economic Activity Index — NC A&T State University</title>
+  <title>Piedmont Triad Economic Activity Report — NC A&T State University</title>
+  <meta property="og:title" content="Piedmont Triad Economic Activity Report" />
+  <meta property="og:description" content="Monthly economic activity report for the Piedmont Triad. Economic Activity Index: 108.1 as of May 2026." />
+  <meta property="og:image" content="https://macroinsights.github.io/piedmont-triad-aei/assets/romero.jpg" />
+  <meta property="og:url" content="https://macroinsights.github.io/piedmont-triad-aei/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
   <style>
     :root {
@@ -342,9 +348,9 @@
   <div class="card">
 
     <div class="rpt-header">
-      <h1>Piedmont Triad Economic Activity Index</h1>
+      <h1>Piedmont Triad Economic Activity Report</h1>
       <div class="header-row">
-        <span class="release">Monthly Report &mdash; April 2026</span>
+        <span class="release">Monthly Report &mdash; May 2026</span>
         <span class="inst">Willie A. Deese College of<br>Business and Economics</span>
       </div>
     </div>
@@ -356,29 +362,21 @@
         <img class="author-photo" src="assets/romero.jpg" alt="Dr. Alfredo A. Romero">
         <div class="personal-msg">
           <p>
-            <strong>JetZero broke ground in June on its $4.7 billion aircraft assembly campus in
-            Greensboro, launching a project expected to create 14,500 jobs over the next decade.
-            Deloitte&rsquo;s Believers program is already working to help prepare the local workforce
-            for that opportunity.</strong> Developments like this are exactly why the Triad needs a
-            consistent way to track whether major investments are translating into broader regional
-            momentum. Every month I&rsquo;ll be releasing the Triad Economic Index, which combines
-            four labor-market indicators (employment, unemployment, hours, and earnings) across the
+            <strong>JetZero broke ground in June on its $4.7 billion aircraft assembly campus in Greensboro, launching a project expected to create 14,500 jobs over the next decade. Deloitte&rsquo;s Believers program is already working to help prepare the local workforce for that opportunity.</strong> Developments like this are exactly why the Triad
+            needs a consistent way to track whether major investments are translating into broader
+            regional momentum. Every month I&rsquo;ll be releasing the <strong>Piedmont Triad
+            Economic Activity Report</strong>, which combines four labor-market indicators
+            (employment, unemployment, hours, and earnings) across the
             Greensboro&ndash;High Point, Winston-Salem, and Burlington metro areas into a single
-            reading of the regional economy. The index is supplemented by a momentum indicator,
-            which gauges whether growth is running above or below the region&rsquo;s historical
-            norm, and a labor utilization indicator, which measures how fully the region&rsquo;s
-            labor market is being used.
+            reading of the regional economy, supplemented by a growth momentum indicator and a
+            labor utilization indicator.
           </p>
           <p>
-            As of <strong>April 2026</strong>, the index stands at <strong>108.1</strong>
-            (2019&nbsp;=&nbsp;100), <strong>5.1 points above the 2007 pre-recession peak of
-            103</strong> and the highest reading in the index&rsquo;s 19-year data history. Growth
-            momentum is <strong>76 out of 100</strong>, above the 50-point neutral threshold,
-            indicating that recent growth is running faster than the region&rsquo;s historical norm.
-            Labor utilization, however, stands at <strong>98.5</strong>, still below the 2019
-            baseline. That gap is worth watching: it tells us employers have room to get more out of
-            their existing workforce before they need to hire, which, if momentum holds, is typically
-            what happens right before the next wave of job growth.
+            As of <strong>May 2026</strong>, the economic activity index stands at
+            <strong>108.1</strong> (2019&nbsp;=&nbsp;100), <strong>5.4 points above
+            the 2007 pre-recession peak of 102.7</strong> and the highest reading in
+            the index&rsquo;s 19-year data history. Growth momentum is
+            <strong>81 out of 100</strong>, above the 50-point neutral threshold, indicating that recent growth is running faster than the region&rsquo;s historical norm. Labor utilization, however, stands at <strong>98.3</strong>, still below the 2019 baseline. That gap is worth watching: it tells us employers have room to get more out of their existing workforce before they need to hire, which, if momentum holds, is typically what happens right before the next wave of job growth.
           </p>
           <div class="sig">
             <a class="sig-name" href="https://www.linkedin.com/in/ElDocRomero/" target="_blank" rel="noopener">Dr. Alfredo A. Romero</a><br>
@@ -389,13 +387,14 @@
       </div>
 
       <div class="dl-bar inset">
-        <a class="download-btn" href="reports/AEI_April_2026.pdf" target="_blank">&#8595;&nbsp; Download Report (PDF)</a>
-        <span class="dl-note">Full report with methodology &mdash; April 2026</span>
+        <a class="download-btn" href="reports/AEI_May_2026.pdf" target="_blank">&#8595;&nbsp; Download Report (PDF)</a>
+        <a class="download-btn" href="data/aei-data.csv" download style="background:#555;">&#8595;&nbsp; Download Data (CSV)</a>
+        <span class="dl-note">Data through May 2026</span>
       </div>
 
       <!-- Level index chart (primary) -->
-      <div class="chart-title">Piedmont Triad Economic Activity Index</div>
-      <div class="chart-sub">Index level (2019 = 100) &mdash; dotted line marks 2007 peak (103)</div>
+      <div class="chart-title">Economic Activity Index</div>
+      <div class="chart-sub">Index level (2019 = 100) &mdash; dotted line marks 2007 peak (102.7)</div>
       <div class="chart-wrap">
         <canvas id="levelChart"></canvas>
       </div>
@@ -404,13 +403,13 @@
       <!-- Small charts -->
       <div class="small-row">
         <div>
-          <div class="small-title">Piedmont Triad Economic Growth Momentum</div>
+          <div class="small-title">Growth Momentum</div>
           <div class="small-sub">Readings above 50 indicate expansion; below 50 indicate contraction</div>
           <div class="small-wrap"><canvas id="momChart"></canvas></div>
           <div class="source" style="margin-top:5px">Source: U.S. Bureau of Labor Statistics.</div>
         </div>
         <div>
-          <div class="small-title">Piedmont Triad Labor Utilization</div>
+          <div class="small-title">Labor Utilization</div>
           <div class="small-sub">Average weekly hours worked (2019 = 100)</div>
           <div class="small-wrap"><canvas id="luChart"></canvas></div>
           <div class="source" style="margin-top:5px">Source: U.S. Bureau of Labor Statistics.</div>
@@ -424,12 +423,14 @@
       and average hourly earnings across the Greensboro&ndash;High Point, Winston&ndash;Salem, and
       Burlington MSAs. Constructed via principal component analysis on seasonally adjusted BLS series
       (X-13-ARIMA-SEATS), calibrated to employment growth via OLS, and rebased to 2019&nbsp;=&nbsp;100.
+      Index readings are preliminary and subject to revision as BLS revises the underlying CES and
+      LAUS series; figures here reflect data as of May 2026.
       <strong>Data:</strong> U.S. Bureau of Labor Statistics, Local Area Unemployment Statistics and
       Current Employment Statistics programs.
     </div>
 
     <div class="page-foot">
-      Piedmont Triad Economic Activity Index &middot; Willie A. Deese College of Business and Economics, NC A&amp;T State University &middot; Source: U.S. Bureau of Labor Statistics
+      Piedmont Triad Economic Activity Report &middot; Willie A. Deese College of Business and Economics, NC A&amp;T State University &middot; Source: U.S. Bureau of Labor Statistics
     </div>
 
   </div><!-- /card page 1 -->
@@ -440,7 +441,7 @@
     <div class="p2-header">
       <h2>Reading the Index</h2>
       <div class="header-row">
-        <span class="subhead">What the Numbers Mean &mdash; April 2026</span>
+        <span class="subhead">What the Numbers Mean &mdash; May 2026</span>
         <span class="inst">Willie A. Deese College of<br>Business and Economics</span>
       </div>
     </div>
@@ -448,7 +449,7 @@
     <div class="reading-body">
 
       <div class="rsec">
-        <h3>What is the Piedmont Triad Economic Activity Index?</h3>
+        <h3>What is the Piedmont Triad Economic Activity Report?</h3>
         <p>The Piedmont Triad &mdash; encompassing the Greensboro&ndash;High Point,
         Winston&ndash;Salem, and Burlington metropolitan areas &mdash; is one of North
         Carolina&rsquo;s largest and most economically dynamic regions. Over the past three decades
@@ -457,18 +458,18 @@
         logistics, advanced manufacturing, defense, and financial services. Tracking that evolution,
         and knowing where the region stands at any given moment, requires more than any single data
         series can provide.</p>
-        <p>The Piedmont Triad Economic Activity Index (AEI) was developed to meet that need.
+        <p>The Piedmont Triad Economic Activity Report was developed to meet that need.
         Prepared monthly by Dr. Alfredo A. Romero, Department of Economics, Willie A. Deese
-        College of Business and Economics, NC A&amp;T State University, the AEI
+        College of Business and Economics, NC A&amp;T State University, the report
         combines four labor market indicators drawn from the U.S. Bureau of Labor Statistics &mdash;
         payroll employment, unemployment, average weekly hours, and average hourly earnings &mdash;
-        across all three metropolitan areas. Rather than reporting each series in isolation, the index
-        uses principal component analysis to distill them into a single monthly number that captures
-        their common economic signal. The underlying data are seasonally adjusted, calibrated so that
-        movements in the index correspond directly to regional employment growth, and rebased so that
-        the 2019 average equals 100. That makes the pre-pandemic year the standard reference point,
-        giving readers a stable and familiar baseline against which to measure current and future
-        conditions.</p>
+        across all three metropolitan areas into a single Economic Activity Index. Rather than
+        reporting each series in isolation, the index uses principal component analysis to distill
+        them into a single monthly number that captures their common economic signal. The underlying
+        data are seasonally adjusted, calibrated so that movements in the index correspond directly
+        to regional employment growth, and rebased so that the 2019 average equals 100. That makes
+        the pre-pandemic year the standard reference point, giving readers a stable and familiar
+        baseline against which to measure current and future conditions.</p>
       </div>
 
       <div class="rsec">
@@ -476,7 +477,7 @@
         <p>At 108.1 (2019&nbsp;=&nbsp;100), the Triad&rsquo;s economy has not only fully recovered
         from the COVID-19 shock but has expanded meaningfully beyond its pre-pandemic level &mdash;
         8.1 points above the 2019 baseline. Notably, the current reading also surpasses the
-        pre-recession peak of 103 recorded in mid-2007, placing the Triad&rsquo;s economy at its
+        pre-recession peak of 102.7 recorded in mid-2007, placing the Triad&rsquo;s economy at its
         highest level in the index&rsquo;s 19-year history. For historical perspective: after the
         2008&ndash;09 recession, the region spent roughly six years working its way back to its
         pre-crisis level before eventually surpassing it. The current post-pandemic expansion has
@@ -492,7 +493,7 @@
       </div>
 
       <div class="rsec">
-        <h3>Growth Momentum: 76 out of 100</h3>
+        <h3>Growth Momentum: 81 out of 100</h3>
         <p>If the index level is the scoreboard, growth momentum is the speedometer. It measures not
         where the Triad economy currently stands, but how fast it is moving &mdash; and whether that
         pace is building or fading relative to the region&rsquo;s own history. The score is
@@ -500,7 +501,7 @@
         scale designed to be read at a glance: 50 is the neutral midpoint, above 50 signals
         above-average growth, and below 50 signals that growth has slowed or stalled relative to
         historical norms.</p>
-        <p>At 76, momentum is above the 50-point neutral threshold, indicating that recent growth is running faster than the region&rsquo;s historical norm. For business leaders and regional
+        <p>At 81, momentum is above the 50-point neutral threshold, indicating that recent growth is running faster than the region&rsquo;s historical norm. For business leaders and regional
         policymakers, the combination of an index level above 100 and momentum well above 50 is a
         favorable alignment: the Triad is not merely holding the gains of the post-COVID recovery but
         continuing to build on them. Periods of sustained readings at this level have historically
@@ -511,7 +512,7 @@
       </div>
 
       <div class="rsec">
-        <h3>Labor Utilization: 98.5</h3>
+        <h3>Labor Utilization: 98.3</h3>
         <p>Labor utilization measures average weekly hours worked per employee, indexed so that the
         2019 average equals 100. It captures a dimension of regional labor conditions that payroll
         counts alone cannot: the <em>intensity</em> with which the existing workforce is being
@@ -520,7 +521,7 @@
         committing to permanent new hires when conditions improve. This behavioral pattern means
         labor utilization is typically one of the first places where changes in the economic climate
         show up, making it a practical leading indicator within the composite.</p>
-        <p>At 98.5, workers are logging fewer hours than before the pandemic, pointing to slack in labor demand that the headline index may not fully capture. The 1.5-point gap from the 100 baseline is modest and within the normal range of historical variation, but its persistence alongside a headline index above 100 is worth noting. One reading is that Triad employers still have room to intensify the use of their current workforce before needing to add significant new positions &mdash; a pattern that, if demand continues to grow, could precede a new wave of hiring.</p>
+        <p>At 98.3, workers are logging fewer hours than before the pandemic, pointing to slack in labor demand that the headline index may not fully capture. The 1.7-point gap from the 100 baseline is modest and within the normal range of historical variation, but its persistence alongside a headline index above 100 is worth noting. One reading is that Triad employers still have room to intensify the use of their current workforce before needing to add significant new positions &mdash; a pattern that, if demand continues to grow, could precede a new wave of hiring.</p>
       </div>
 
     </div>
@@ -529,7 +530,7 @@
       <strong>About this report:</strong> Prepared by Dr. Alfredo A. Romero, Associate Professor of
       Economics and Chair, Department of Economics, Willie A. Deese College of Business and
       Economics, NC A&amp;T State University, and former Senior Economist of the U.S. Congressional
-      Joint Economic Committee. The AEI is updated monthly as BLS data become available. Eigenvector
+      Joint Economic Committee. This report is updated monthly as BLS data become available. Eigenvector
       weights are locked annually and revise every December to accommodate BLS benchmark revisions.
       For questions or methodology details, contact Dr. Romero at
       <a href="mailto:aaromero@ncat.edu" style="color:inherit">aaromero@ncat.edu</a>.
@@ -539,7 +540,7 @@
     </div>
 
     <div class="page-foot">
-      Piedmont Triad Economic Activity Index &middot; Willie A. Deese College of Business and Economics, NC A&amp;T State University &middot; Source: U.S. Bureau of Labor Statistics
+      Piedmont Triad Economic Activity Report &middot; Willie A. Deese College of Business and Economics, NC A&amp;T State University &middot; Source: U.S. Bureau of Labor Statistics
     </div>
 
   </div><!-- /card page 2 -->
@@ -552,11 +553,11 @@
     </div>
 
     <div class="archive-body">
-      <p class='archive-empty'>No previous reports available yet.</p>
+      <p class='archive-empty'>Archive begins with the next monthly release.</p>
     </div>
 
     <div class="page-foot">
-      Piedmont Triad Economic Activity Index &middot; Willie A. Deese College of Business and Economics, NC A&amp;T State University
+      Piedmont Triad Economic Activity Report &middot; Willie A. Deese College of Business and Economics, NC A&amp;T State University
     </div>
 
   </div><!-- /card archive -->
@@ -568,17 +569,17 @@
 //  DATA
 // ═══════════════════════════════════════════
 
-const levelLabels = ["2007-02","2007-03","2007-04","2007-05","2007-06","2007-07","2007-08","2007-09","2007-10","2007-11","2007-12","2008-01","2008-02","2008-03","2008-04","2008-05","2008-06","2008-07","2008-08","2008-09","2008-10","2008-11","2008-12","2009-01","2009-02","2009-03","2009-04","2009-05","2009-06","2009-07","2009-08","2009-09","2009-10","2009-11","2009-12","2010-01","2010-02","2010-03","2010-04","2010-05","2010-06","2010-07","2010-08","2010-09","2010-10","2010-11","2010-12","2011-01","2011-02","2011-03","2011-04","2011-05","2011-06","2011-07","2011-08","2011-09","2011-10","2011-11","2011-12","2012-01","2012-02","2012-03","2012-04","2012-05","2012-06","2012-07","2012-08","2012-09","2012-10","2012-11","2012-12","2013-01","2013-02","2013-03","2013-04","2013-05","2013-06","2013-07","2013-08","2013-09","2013-10","2013-11","2013-12","2014-01","2014-02","2014-03","2014-04","2014-05","2014-06","2014-07","2014-08","2014-09","2014-10","2014-11","2014-12","2015-01","2015-02","2015-03","2015-04","2015-05","2015-06","2015-07","2015-08","2015-09","2015-10","2015-11","2015-12","2016-01","2016-02","2016-03","2016-04","2016-05","2016-06","2016-07","2016-08","2016-09","2016-10","2016-11","2016-12","2017-01","2017-02","2017-03","2017-04","2017-05","2017-06","2017-07","2017-08","2017-09","2017-10","2017-11","2017-12","2018-01","2018-02","2018-03","2018-04","2018-05","2018-06","2018-07","2018-08","2018-09","2018-10","2018-11","2018-12","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01","2023-02","2023-03","2023-04","2023-05","2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04"];
+const levelLabels = ["2007-02","2007-03","2007-04","2007-05","2007-06","2007-07","2007-08","2007-09","2007-10","2007-11","2007-12","2008-01","2008-02","2008-03","2008-04","2008-05","2008-06","2008-07","2008-08","2008-09","2008-10","2008-11","2008-12","2009-01","2009-02","2009-03","2009-04","2009-05","2009-06","2009-07","2009-08","2009-09","2009-10","2009-11","2009-12","2010-01","2010-02","2010-03","2010-04","2010-05","2010-06","2010-07","2010-08","2010-09","2010-10","2010-11","2010-12","2011-01","2011-02","2011-03","2011-04","2011-05","2011-06","2011-07","2011-08","2011-09","2011-10","2011-11","2011-12","2012-01","2012-02","2012-03","2012-04","2012-05","2012-06","2012-07","2012-08","2012-09","2012-10","2012-11","2012-12","2013-01","2013-02","2013-03","2013-04","2013-05","2013-06","2013-07","2013-08","2013-09","2013-10","2013-11","2013-12","2014-01","2014-02","2014-03","2014-04","2014-05","2014-06","2014-07","2014-08","2014-09","2014-10","2014-11","2014-12","2015-01","2015-02","2015-03","2015-04","2015-05","2015-06","2015-07","2015-08","2015-09","2015-10","2015-11","2015-12","2016-01","2016-02","2016-03","2016-04","2016-05","2016-06","2016-07","2016-08","2016-09","2016-10","2016-11","2016-12","2017-01","2017-02","2017-03","2017-04","2017-05","2017-06","2017-07","2017-08","2017-09","2017-10","2017-11","2017-12","2018-01","2018-02","2018-03","2018-04","2018-05","2018-06","2018-07","2018-08","2018-09","2018-10","2018-11","2018-12","2019-01","2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01","2023-02","2023-03","2023-04","2023-05","2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05"];
 
-const levelVals = [102.21,102.45,102.5,102.97,102.94,102.89,102.72,102.82,102.86,102.77,102.76,102.85,102.66,102.66,102.75,102.4,102.52,102.12,102.24,102.29,102.47,102.11,101.46,100.81,100.39,99.66,99.17,98.81,98.61,98.47,98.29,98.09,97.66,97.48,97.19,97.14,96.76,96.72,96.68,96.65,96.58,96.52,96.2,95.94,96.06,95.83,95.65,95.19,95.13,94.93,94.95,94.96,94.77,94.92,94.61,94.59,94.52,94.42,94.48,94.56,94.55,94.44,94.37,94.05,93.88,93.61,93.65,93.7,93.63,93.58,93.58,93.42,93.52,93.41,93.35,93.23,93.37,93.27,93.44,93.57,93.48,93.46,93.6,93.45,92.98,93.61,93.77,93.75,93.81,93.83,93.89,94.02,94.12,94.27,94.43,94.41,94.53,94.5,94.5,94.67,94.76,94.85,95.15,95.02,95.2,95.36,95.41,95.3,95.55,95.76,95.81,95.98,95.95,96.16,96.25,96.42,96.49,96.65,96.64,96.6,96.86,96.84,96.97,96.95,97.03,97.13,97.15,97.31,97.5,97.39,97.45,97.59,97.83,97.9,98.13,98.17,98.39,98.49,98.48,98.55,98.75,98.8,98.54,99.51,99.42,99.54,99.73,99.8,99.94,100.02,100.19,100.36,100.3,100.59,100.6,100.63,100.87,100.63,95.18,95.75,96.82,97.06,97.74,97.92,98.38,98.53,98.92,98.82,98.89,99.06,99.24,99.55,99.55,100.05,100.06,100.04,100.42,100.62,100.95,100.76,101.29,101.51,101.6,101.81,101.99,102.38,102.52,102.7,102.79,102.82,103.07,103.42,103.47,103.49,103.52,103.63,103.68,103.93,104.14,104.2,104.32,104.35,104.68,104.8,105.01,105.39,105.41,105.61,105.76,105.58,105.71,105.89,105.82,105.99,106.03,105.8,106.07,106.13,106.34,106.44,106.54,106.72,106.93,107,107.13,107.38,107.41,107.5,107.59,107.71,108.07];
+const levelVals = [101.85,102.13,102.2,102.67,102.66,102.59,102.41,102.5,102.54,102.45,102.41,102.58,102.34,102.36,102.54,102.16,102.3,101.94,102.03,102.07,102.19,101.84,101.18,100.61,100.15,99.47,99,98.64,98.47,98.33,98.14,97.96,97.52,97.35,97.07,97.07,96.64,96.61,96.61,96.55,96.52,96.47,96.14,95.88,96,95.79,95.62,95.2,95.12,94.95,94.96,94.95,94.79,94.95,94.64,94.6,94.53,94.46,94.51,94.62,94.57,94.49,94.41,94.1,93.94,93.69,93.71,93.77,93.7,93.66,93.67,93.55,93.6,93.52,93.49,93.33,93.49,93.39,93.54,93.67,93.59,93.58,93.71,93.59,93.09,93.75,93.88,93.86,93.91,93.96,94.01,94.13,94.23,94.39,94.54,94.54,94.62,94.63,94.62,94.79,94.86,94.96,95.25,95.13,95.29,95.44,95.48,95.41,95.63,95.86,95.92,96.06,96.03,96.24,96.33,96.48,96.56,96.72,96.64,96.65,96.91,96.92,97.03,97.01,97.08,97.19,97.21,97.34,97.53,97.43,97.43,97.64,97.86,97.92,98.19,98.21,98.43,98.53,98.51,98.57,98.78,98.82,98.5,99.54,99.42,99.56,99.73,99.8,99.95,100.04,100.19,100.34,100.3,100.58,100.54,100.64,100.83,100.61,95.24,95.83,96.89,97.15,97.8,97.98,98.42,98.58,98.95,98.88,98.91,99.07,99.26,99.55,99.57,100.06,100.06,100.02,100.4,100.58,100.91,100.73,101.23,101.45,101.51,101.73,101.9,102.29,102.42,102.57,102.65,102.69,102.94,103.3,103.32,103.36,103.36,103.48,103.53,103.77,103.97,104.02,104.14,104.16,104.49,104.62,104.81,105.18,105.23,105.41,105.56,105.39,105.51,105.69,105.63,105.78,105.83,105.63,105.87,105.96,106.16,106.26,106.36,106.55,106.74,106.8,106.93,107.18,107.19,107.31,107.36,107.47,107.87,108.07];
 
-const momLabels = ["2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01","2023-02","2023-03","2023-04","2023-05","2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04"];
+const momLabels = ["2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01","2023-02","2023-03","2023-04","2023-05","2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05"];
 
-const momVals = [72.8,69,58.7,71.4,80.5,74.5,84.8,74.9,74.2,69.4,76.8,87,67.8,80.3,76.8,85.2,75.3,73.5,83.3,81.3,81.1,70.5,65.8,69.1,78.8,79.4,70.7,56.4,59.3,60.8,70.3,74.1,74.7,69.9,62,73.2,72.8,79.1,80.6,77.8,77.2,68.4,59.7,56.4,57.8,62.8,64.6,58.3,50.8,55.9,56.7,74.8,68.4,69.9,69.1,72.8,71.9,69.6,71.4,69.8,68.2,61.3,65.5,76];
+const momVals = [73.5,67.7,57.6,70.1,80.3,75,84.9,75.1,72.8,67.9,75.8,86.9,67.8,79.8,76.5,83.8,74.6,72.2,83.9,81.3,80.5,68.4,64.4,69.2,79.7,79.1,71.2,54.3,59.3,59.5,70.7,73.9,74,68.9,60.6,72.9,73.4,79.2,80.5,77.9,77.7,69,59.3,56.1,57.4,62.5,64.5,58.3,51.7,55.8,57.9,74.7,69.3,69.9,69.4,72.6,71.3,68.9,71.4,68.9,68.8,60,64.7,75.9,80.7];
 
-const luLabels = ["2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01","2023-02","2023-03","2023-04","2023-05","2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04"];
+const luLabels = ["2021-01","2021-02","2021-03","2021-04","2021-05","2021-06","2021-07","2021-08","2021-09","2021-10","2021-11","2021-12","2022-01","2022-02","2022-03","2022-04","2022-05","2022-06","2022-07","2022-08","2022-09","2022-10","2022-11","2022-12","2023-01","2023-02","2023-03","2023-04","2023-05","2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09","2024-10","2024-11","2024-12","2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05"];
 
-const luVals = [100,99.7,99.2,100.5,101.3,99.9,101.1,101.5,101.3,102.3,101.7,101.8,101.3,102.3,101.5,100.8,101.4,100.9,101.4,101,101,101.4,100.4,101,103.1,101.3,100.9,100.8,100.4,99.5,100.5,99.7,99.8,99.5,98.6,99.2,99,99.2,101.2,100.2,100.8,101.5,99.7,99,100,98.7,98.3,98.4,96.2,97.6,97.8,96.9,96.6,97.1,97.3,98.2,98.2,98,99.7,98.2,97.9,98.2,98,98.5];
+const luVals = [100,99.7,99.2,100.5,101.3,99.9,101.1,101.5,101.3,102.3,101.7,101.8,101.3,102.2,101.5,100.8,101.4,100.9,101.4,101,101,101.4,100.4,101,103,101.3,100.9,100.8,100.4,99.5,100.5,99.7,99.8,99.5,98.6,99.2,99,99.2,101.2,100.2,100.8,101.5,99.7,99,100,98.7,98.4,98.4,96.2,97.6,97.8,96.9,96.6,97.1,97.3,98.2,98.2,98,99.7,98.2,97.9,98.2,98,98.5,98.3];
 
 // ═══════════════════════════════════════════
 //  CONSTANTS
@@ -681,7 +682,7 @@ function endLabelPlugin(line1, line2) {
 //  LEVEL CHART
 // ═══════════════════════════════════════════
 
-const PRE_REC_PEAK = 103;
+const PRE_REC_PEAK = 102.7;
 
 // Labels the pre-recession peak reference line on the level chart
 const peakLabelPlugin = {
@@ -775,7 +776,7 @@ new Chart(document.getElementById('levelChart'), {
       }
     }
   },
-  plugins: [recessionPlugin, endLabelPlugin('Apr 2026', '108.1'), peakLabelPlugin]
+  plugins: [recessionPlugin, endLabelPlugin('May 2026', '108.1'), peakLabelPlugin]
 });
 
 // ═══════════════════════════════════════════
@@ -841,7 +842,7 @@ new Chart(document.getElementById('momChart'), {
       }
     }
   },
-  plugins: [endLabelPlugin('Apr 2026', '76')]
+  plugins: [endLabelPlugin('May 2026', '81')]
 });
 
 // ═══════════════════════════════════════════
@@ -912,7 +913,7 @@ new Chart(document.getElementById('luChart'), {
       }
     }
   },
-  plugins: [endLabelPlugin('Apr 2026', '98.5')]
+  plugins: [endLabelPlugin('May 2026', '98.3')]
 });
 </script>
 </body>
