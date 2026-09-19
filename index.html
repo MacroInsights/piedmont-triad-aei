@@ -272,7 +272,7 @@
       <div class="chart-card">
         <div class="chart-title">Labor Utilization</div>
         <div class="chart-sub">Average weekly hours worked (2019 = 100)</div>
-        <div class="legend"><span><i style="background:rgba(253,185,39,.6)"></i>Above 2019 baseline</span><span><i style="background:rgba(0,70,132,.35)"></i>Below 2019 baseline</span></div>
+        <div class="legend"><span><i style="background:rgba(46,125,50,.4)"></i>Above 2019 baseline</span><span><i style="background:rgba(192,57,43,.4)"></i>Below 2019 baseline</span></div>
         <div class="small-wrap"><canvas id="luChart"></canvas></div>
         <div class="source">Source: U.S. Bureau of Labor Statistics.</div>
       </div>
@@ -861,7 +861,7 @@ function buildLU() {
           pointHoverBorderColor: BLUE,
           pointHoverBorderWidth: 2,
           tension: 0.15,
-          fill: { target: { value: 100 }, above: 'rgba(253,185,39,0.40)', below: 'rgba(0,70,132,0.20)' },
+          fill: { target: { value: 100 }, above: 'rgba(46,125,50,0.15)', below: 'rgba(192,57,43,0.15)' },
           order: 1
         }
       ]
