@@ -189,7 +189,7 @@
       .chart-wrap { height: 300px; }
     }
     @media (max-width: 480px) { .wrap { padding: 0 16px; } }
-    @media print { .btn { display: none; } details > * { display: block; } }
+    @media print { .btn, iframe { display: none; } details > * { display: block; } }
   </style>
 </head>
 <body>
@@ -345,6 +345,22 @@
       </div>
 
     </div>
+  </div>
+</section>
+
+<!-- ══════════ THE TRIAD AT A GLANCE ══════════ -->
+<section class="section cream" id="triad-map">
+  <div class="wrap">
+    <div class="eyebrow">The Triad at a Glance</div>
+    <h2>County-level economic conditions</h2>
+    <p style="font-size:15px;color:var(--muted);margin-bottom:20px;">Unemployment rate by county for July 2026. Hover over a county for employment indicators; click for private-sector industry employment detail.</p>
+    <iframe
+      src="triad_map.html"
+      style="width:100%;height:660px;border:1px solid var(--line);border-radius:4px;box-shadow:0 3px 14px rgba(60,45,0,0.08);"
+      title="Piedmont Triad county economic map"
+      loading="lazy">
+    </iframe>
+    <p class="source" style="margin-top:10px;">Source: U.S. Bureau of Labor Statistics, Local Area Unemployment Statistics (monthly) and Quarterly Census of Employment and Wages (sector detail).</p>
   </div>
 </section>
 
