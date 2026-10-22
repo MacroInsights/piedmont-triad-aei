@@ -1,13 +1,13 @@
 {
-  "data_month": "July 2026",
-  "index_value": 108.3,
-  "momentum": 71,
-  "labor_utilization": 98.1,
+  "data_month": "August 2026",
+  "index_value": 108.5,
+  "momentum": 73,
+  "labor_utilization": 98.5,
   "regime": "Flat",
-  "avg_growth_3m_pct": 0.14,
-  "above_peak": 5.6,
+  "avg_growth_3m_pct": 0.15,
+  "above_peak": 5.8,
   "pre_rec_peak": 102.7,
-  "blurb": "As of July 2026, the Piedmont Triad Economic Activity Index stands at 108.3 — 8.3 points above the 2019 baseline and 5.6 points above the pre-recession peak of 102.7 recorded in 2007, the highest level in the index’s history. The region is in a Flat phase. Growth Momentum is 71 out of 100, above the 50-point neutral threshold, indicating growth is running faster than the historical norm. Labor Utilization stands at 98.1, 1.9 points below the 2019 baseline.",
+  "blurb": "As of August 2026, the Piedmont Triad Economic Activity Index stands at 108.5 — 8.5 points above the 2019 baseline and 5.8 points above the pre-recession peak of 102.7 recorded in 2007, the highest level in the index’s history. The region is in a Flat phase. Growth Momentum is 73 out of 100, above the 50-point neutral threshold, indicating growth is running faster than the historical norm. Labor Utilization stands at 98.5, 1.5 points below the 2019 baseline.",
   "sparkline": [
     {
       "quarter": "2024-Q3",
